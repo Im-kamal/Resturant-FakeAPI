@@ -12,7 +12,7 @@ for(var i =0 ;i<links.length ;i++){
 
 var data = [];
 
-async function GetApiData(meal){
+async function GetApiData(meal="pizza"){
 //    var https = new XMLHttpRequest();
 
 // https.open('GET',`https://forkify-api.herokuapp.com/api/search?q=${meal}`);
@@ -52,7 +52,7 @@ function displayData(){
    document.getElementById("colsData").innerHTML = cols;
 }
 
-GetApiData("pizza");
+GetApiData();
 
 
 
